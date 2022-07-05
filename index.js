@@ -115,7 +115,7 @@ app.post("/login",async(req,res)=>{
 })
 
 app.post("/addmovie",async(req,res)=>{
-    const{Movie_Name,Rating,Cast,Genre,releaseDate}=req.body;
+    
     addmovie= new moviedetailsschema(req.body)
     movie = new moviedetailsschema(
         req.body
